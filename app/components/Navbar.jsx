@@ -27,7 +27,7 @@ const Navbar = () => {
 <div>
 
 
-<nav className={`w-full transition-all bg-black fixed duration-200  rounded-md   ${show ? 'top-0' : '-top-20'} left-0 right-0 z-10`}>
+<nav className={`w-full transition-all bg-black sticky duration-200      ${show ? 'top-0' : '-top-20'} left-0 right-0 z-10`}>
 
   
   <div className="  justify-between px-4 mx-auto lg:max-w-7xl justify-items-center	 md:items-center md:flex md:px-8">
@@ -36,9 +36,12 @@ const Navbar = () => {
 
       <div className="flex items-center justify-between py-3 md:py-5 md:block">
         {/* LOGO */}
-        <Link href="/">
-      <img src="/logo.jpg" className=" h-10 w-14 -mt- " alt="img" />
+        <div className="  w-14 -mb-3 ">
+        <Link href="/"  >
+      <img src="/logo.jpg" className="   "  alt="img" />
         </Link>
+        </div>
+      
         {/* HAMBURGER BUTTON FOR MOBILE */}
         <div className="md:hidden">
           <button
@@ -68,24 +71,24 @@ const Navbar = () => {
         }`}
       >
         <ul className="h-screen transition-all  md:h-auto items-center   duration-300    justify-center md:flex ">
-          <li className="pb-6 text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+          <li onClick={() => setNavbar(false)} className="pb-6 text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
            <Link href={"/"} onClick={() => setNavbar(false)}>
               Home
             </Link>
           </li>
 
-          <li className="pb-6 text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+          <li onClick={() => setNavbar(false)} className="pb-6 text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
           <Link href={"/service"} onClick={() => setNavbar(false)}>
           service
             </Link>
           </li>
 
-          <li className="pb-6 text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+          <li onClick={() => setNavbar(false)} className="pb-6 text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
           <Link href={"/about"} onClick={() => setNavbar(false)}>
           About
             </Link>
           </li>
-          <li className="pb-6 text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+          <li onClick={() => setNavbar(false)} className="pb-6 text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
           <Link   href={"/contact"} onClick={() => setNavbar(false)}>
           contact
             </Link>
