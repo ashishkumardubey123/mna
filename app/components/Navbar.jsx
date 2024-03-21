@@ -7,7 +7,7 @@ import React from "react";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [show, setShow] = useState(true);
-  const [scrollPos, setScrollPos] = useState(0);
+  const [scrollPos, setScrollPos] = useState(1);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -27,7 +27,7 @@ const Navbar = () => {
 <div>
 
 
-<nav className={`w-full transition-all bg-black sticky duration-200      ${show ? 'top-0' : '-top-20'} left-0 right-0 z-10`}>
+<nav className={`w-full transition-all bg-black relative  top  duration-500      ${show ? 'top-0' : '-top-28'} z-10`}>
 
   
   <div className="  justify-between px-4 mx-auto lg:max-w-7xl justify-items-center	 md:items-center md:flex md:px-8">
