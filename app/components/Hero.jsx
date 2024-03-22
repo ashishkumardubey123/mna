@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
+import { Cards } from "@/component/Cards";
 
 
 
@@ -27,7 +28,7 @@ export function Hero() {
             Music Production studio for everyone with a dream!
           </div>
           <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-            And this, is chemical burn.
+          Music that Moves You.
           </div>
           <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[3px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -38,7 +39,7 @@ export function Hero() {
         </motion.div>
       </AuroraBackground>
 
-
+          <Cards/>
 
       {/* <div>
         <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
