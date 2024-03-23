@@ -40,24 +40,8 @@ export function Hero() {
       </AuroraBackground>
 
           <Cards/>
+</>
 
-      {/* <div>
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
-            cards={Cards.map((card, index) => (
-              <div key={index} className="card">
-                <div>{card.icon}</div>
-                <h1>{card.heading}</h1>
-                <p>{card.discription}</p>
-                <button>View More</button>
-              </div>
-            ))}
-            direction="right"
-            speed="slow"
-          />
-        </div>
-      </div> */}
-    </>
   );
 }
 
