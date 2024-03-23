@@ -28,7 +28,7 @@ const Navbar = () => {
 
 
 <nav
-        className={` dark:bg-black z-[100] start-0 border-b bg-black border-gray-200 dark:border-gray-700 shadow md:inset-x-0 md:border-t ${
+        className={` dark:bg-black z-[100] start-0 border-b justify-center bg-black border-gray-200 dark:border-gray-700 shadow md:inset-x-0 md:border-t ${
           isSticky
             ? "sticky top-0 md:translate-y-3 md:w-3/4 lg:w-4/5 mx-auto md:rounded-3xl  z-[100] transition-all duration-300"
             : "  w-full z-[100] "
@@ -72,21 +72,21 @@ const Navbar = () => {
     </div>
     <div>
       <div
-        className={`flex-1 transition-all justify-self-center pb-3 mt-8   duration-300  md:block md:pb-0 md:mt-0 ${
+        className={`flex-1 transition-all justify-self-center    duration-300  md:block md:pb-0 md:mt-0 ${
           navbar ? 'p-12 md:p-0 block' : 'hidden'
         }`}
       >
         <ul className="h-screen transition-all  md:h-auto items-center   duration-300    justify-center md:flex ">
           
            <Link href={"/"} onClick={() => setNavbar(false)}>
-           <li  className="pb-6 text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+           <li  className=" text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
               Home
              </li>
             </Link>
          
 
             <Link href={"/service"} onClick={() => setNavbar(false)}>
-          <li  className="pb-6 text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+          <li  className=" text-lg text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
          
           service
           
@@ -94,7 +94,7 @@ const Navbar = () => {
           </Link>
 
           <Link href={"/about"} onClick={() => setNavbar(false)}>
-          <li  className="pb-6 text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+          <li  className=" text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
          
           About
         
@@ -102,7 +102,7 @@ const Navbar = () => {
             </Link>
 
             <Link   href={"/contact"} onClick={() => setNavbar(false)}>
-          <li  className="pb-6 text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+          <li  className=" text-lg text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
          
           contact
          
