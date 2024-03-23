@@ -110,7 +110,7 @@ function Contactform() {
                       </span>
                      </a>
                   <a href="https://www.tiktok.com/@wix">
-                  <span className="inline-block p-3 text-blue-300 rounded-full bg-blue-100/80 hover:text-pink-600">
+                  <span className="inline-block p-3 text-black rounded-full bg-blue-100/80 hover:text-pink-600">
                     <i><FaTiktok /></i>
                      
                       </span>
